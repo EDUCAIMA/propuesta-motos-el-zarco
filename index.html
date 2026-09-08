@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propuesta de Desarrollo Web | Motos El Zarco — Hero MotoCorp</title>
+  <meta name="description" content="Propuesta de desarrollo de software integral para la gestión de Motos El Zarco: Ventas POS, Inventario con QR, Taller Mecánico, Finanzas, Nómina y Reportes.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ══════════ HERO SECTION ══════════ -->
+<header class="hero" id="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <div class="hero-logo-wrap animate-up">
+      <img src="logo.png" alt="Motos El Zarko - Hero Taller Autorizado" class="hero-logo-img">
+    </div>
+    
+    <h1 class="animate-up delay-1">
+      <span class="highlight">Software de Gestión a la Medida</span>
+    </h1>
+
+    <p class="animate-up delay-2">
+      Plataforma web centralizada diseñada específicamente para potenciar la venta de repuestos, 
+      el control de taller, inventarios con código QR, finanzas y nómina bajo la identidad de <strong>Motos El Zarco</strong> y el respaldo de <strong>Hero Repuestos</strong>.
+    </p>
+
+    <div class="hero-buttons animate-up delay-3">
+      <a href="#modulos" class="btn-primary">Explorar Módulos</a>
+      <a href="#vistas" class="btn-outline">Ver Pantallas en Vivo</a>
+    </div>
+  </div>
+</header>
+
+<!-- ══════════ STATS / HIGHLIGHTS BAR ══════════ -->
+<section class="stats-bar">
+  <div class="stats-grid">
+    <div class="stat-item animate-up">
+      <h3>7 <span>+</span></h3>
+      <p>Módulos Integrados</p>
+    </div>
+    <div class="stat-item animate-up delay-1">
+      <h3>100<span>%</span></h3>
+      <p>Control en Tiempo Real</p>
+    </div>
+    <div class="stat-item animate-up delay-2">
+      <h3>QR <span>Code</span></h3>
+      <p>Gestión Rápida de Repuestos</p>
+    </div>
+    <div class="stat-item animate-up delay-3">
+      <h3>Hero <span>Style</span></h3>
+      <p>Diseño Blanco, Negro y Rojo</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ MÓDULOS PRINCIPALES ══════════ -->
+<section class="section" id="modulos">
+  <div class="section-header">
+    <h2 class="section-title">Módulos creados a la medida<br>de su operación</h2>
+    <p class="section-subtitle">
+      Cada módulo se sincroniza de forma automática con el resto del sistema, eliminando libros manuales y reduciendo tiempos de atención.
+    </p>
+  </div>
+
+  <div class="modules-grid">
+    <!-- 1. Ventas POS -->
+    <div class="module-card animate-up">
+      <div>
+        <div class="module-icon-wrap">🛒</div>
+        <h3>1. Ventas & Punto de Venta (POS)</h3>
+        <p>
+          Diseñado para facturación y despacho ultra rápido de repuestos. Búsqueda por nombre o código de barras/QR, cálculo inmediato de totales, descuentos y múltiples medios de pago.
+        </p>
+      </div>
+      <div class="module-tags">
+        <span class="module-tag">Lector QR</span>
+        <span class="module-tag">Efectivo / Tarjeta / Transferencia</span>
+        <span class="module-tag">Facturación / Ticket</span>
+        <span class="module-tag">Historial de Ventas</span>
+      </div>
+    </div>
+
+    <!-- 2. Inventario -->
+    <div class="module-card animate-up delay-1">
+      <div>
+        <div class="module-icon-wrap">📦</div>
+        <h3>2. Inventario & Compras</h3>
+        <p>
+          Control de existencias de repuestos Hero y multimarca. Alertas automáticas de stock mínimo, generación de etiquetas QR, entradas/salidas y módulo de compras con proveedores.
+        </p>
+      </div>
+      <div class="module-tags">
+        <span class="module-tag">Generador QR</span>
+        <span class="module-tag">Alerta Stock Bajo</span>
+        <span class="module-tag">Módulo de Compras</span>
+        <span class="module-tag">Costo vs. Venta</span>
+      </div>
+    </div>
+
+    <!-- 3. Taller Mecánico -->
+    <div class="module-card animate-up delay-2">
+      <div>
+        <div class="module-icon-wrap">🔧</div>
+        <h3>3. Taller & Servicios Técnicos</h3>
+        <p>
+          Gestión de servicios (cambio de aceite, sincronización, kit de arrastre, frenos). Asignación de mecánicos, repuestos utilizados en el servicio y facturación unificada.
+        </p>
+      </div>
+      <div class="module-tags">
+        <span class="module-tag">Órdenes de Servicio</span>
+        <span class="module-tag">Mecánicos Asignados</span>
+        <span class="module-tag">Repuestos Utilizados</span>
+        <span class="module-tag">Mano de Obra</span>
+      </div>
+    </div>
+
+    <!-- 4. Finanzas & Caja -->
+    <div class="module-card animate-up delay-3">
+      <div>
+        <div class="module-icon-wrap">💰</div>
+        <h3>4. Finanzas & Control de Caja</h3>
+        <p>
+          Visión transparente de la salud económica del negocio: arqueo de caja diaria, registro de ingresos automáticos por ventas/taller y clasificación detallada de gastos operativos.
+        </p>
+      </div>
+      <div class="module-tags">
+        <span class="module-tag">Arqueo de Caja</span>
+        <span class="module-tag">Ingresos Automáticos</span>
+        <span class="module-tag">Gastos por Categoría</span>
+        <span class="module-tag">Utilidad del Período</span>
+      </div>
+    </div>
+
+    <!-- 5. Nómina -->
+    <div class="module-card animate-up delay-4">
+      <div>
+        <div class="module-icon-wrap">👥</div>
+        <h3>5. Personal & Nómina</h3>
+        <p>
+          Administración de colaboradores, mecánicos y asesores. Registro de pagos de nómina, adelantos, bonificaciones por desempeño y control de histórico de pagos.
+        </p>
+      </div>
+      <div class="module-tags">
+        <span class="module-tag">Ficha de Empleado</span>
+        <span class="module-tag">Registro de Pagos</span>
+        <span class="module-tag">Bonificaciones</span>
+        <span class="module-tag">Historial por Colaborador</span>
+      </div>
+    </div>
+
+    <!-- 6. Dashboard & Reportes -->
+    <div class="module-card animate-up delay-5">
+      <div>
+        <div class="module-icon-wrap">📊</div>
+        <h3>6. Dashboard & Reportes Gerenciales</h3>
+        <p>
+          Panel ejecutivo limpio con métricas clave: ventas del día, repuestos más vendidos, servicios más solicitados, flujo de caja y productos próximos a agotarse.
+        </p>
+      </div>
+      <div class="module-tags">
+        <span class="module-tag">KPIs en Tiempo Real</span>
+        <span class="module-tag">Rotación de Repuestos</span>
+        <span class="module-tag">Flujo de Caja</span>
+        <span class="module-tag">Exportación de Datos</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ VISTAS DEL SISTEMA (INTERACTIVE PREVIEWS) ══════════ -->
+<section class="section" id="vistas">
+  <div class="section-header">
+    <h2 class="section-title">Diseño de Interfaces Exclusivo<br>para Motos El Zarco</h2>
+    <p class="section-subtitle">
+      Elegancia, velocidad y ergonomía visual con la paleta de colores oficial: <strong>Rojo Hero (#D9121E), Negro y Blanco</strong>.
+    </p>
+  </div>
+
+  <!-- Vista 1: Ventas POS -->
+  <div class="preview-container animate-up">
+    <div class="preview-bar">
+      <div class="preview-dots">
+        <span class="preview-dot red"></span>
+        <span class="preview-dot yellow"></span>
+        <span class="preview-dot green"></span>
+      </div>
+      <div class="preview-title-bar">
+        <span>🛒 Módulo de Ventas POS — Facturación Rápida y Catálogo de Repuestos</span>
+        <span class="preview-live-badge">Captura Oficial</span>
+      </div>
+      <a href="preview-interfaces/ventas-pos.png" target="_blank" class="preview-open-btn">
+        Abrir imagen completa ↗
+      </a>
+    </div>
+    <div class="preview-image-wrapper">
+      <a href="preview-interfaces/ventas-pos.png" target="_blank" title="Clic para ampliar en alta definición">
+        <img src="preview-interfaces/ventas-pos.png" alt="Módulo de Ventas POS - Motos El Zarco" class="preview-hero-img" loading="lazy" />
+      </a>
+    </div>
+  </div>
+
+  <!-- Vista 2: Inventario -->
+  <div class="preview-container animate-up">
+    <div class="preview-bar">
+      <div class="preview-dots">
+        <span class="preview-dot red"></span>
+        <span class="preview-dot yellow"></span>
+        <span class="preview-dot green"></span>
+      </div>
+      <div class="preview-title-bar">
+        <span>📦 Módulo de Inventario — Control de Stock, Código QR y Proveedores</span>
+        <span class="preview-live-badge">Captura Oficial</span>
+      </div>
+      <a href="preview-interfaces/inventario.png" target="_blank" class="preview-open-btn">
+        Abrir imagen completa ↗
+      </a>
+    </div>
+    <div class="preview-image-wrapper">
+      <a href="preview-interfaces/inventario.png" target="_blank" title="Clic para ampliar en alta definición">
+        <img src="preview-interfaces/inventario.png" alt="Módulo de Inventario - Motos El Zarco" class="preview-hero-img" loading="lazy" />
+      </a>
+    </div>
+  </div>
+
+  <!-- Vista 3: Finanzas -->
+  <div class="preview-container animate-up">
+    <div class="preview-bar">
+      <div class="preview-dots">
+        <span class="preview-dot red"></span>
+        <span class="preview-dot yellow"></span>
+        <span class="preview-dot green"></span>
+      </div>
+      <div class="preview-title-bar">
+        <span>💰 Módulo Financiero — Ingresos, Gastos y Arqueo de Caja</span>
+        <span class="preview-live-badge">Captura Oficial</span>
+      </div>
+      <a href="preview-interfaces/finanzas.png" target="_blank" class="preview-open-btn">
+        Abrir imagen completa ↗
+      </a>
+    </div>
+    <div class="preview-image-wrapper">
+      <a href="preview-interfaces/finanzas.png" target="_blank" title="Clic para ampliar en alta definición">
+        <img src="preview-interfaces/finanzas.png" alt="Módulo Financiero - Motos El Zarco" class="preview-hero-img" loading="lazy" />
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FLUJOS DE FUNCIONAMIENTO ══════════ -->
+<section class="section" id="flujos">
+  <div class="section-header">
+    <h2 class="section-title">¿Cómo se comunican los módulos?</h2>
+    <p class="section-subtitle">
+      Cero doble digitación: cuando una acción ocurre en un módulo, se refleja de inmediato en todo el negocio.
+    </p>
+  </div>
+
+  <div class="flow-container">
+    <div class="flow-grid">
+      <!-- Flujo 1 -->
+      <div class="flow-card">
+        <h4>🛒 Venta de Repuesto</h4>
+        <ul class="flow-steps">
+          <li class="flow-step">Seleccionar producto o escanear QR</li>
+          <li class="flow-step">Ajustar cantidades y descuentos</li>
+          <li class="flow-step">Seleccionar método de pago</li>
+          <li class="flow-step">Finalizar y generar comprobante</li>
+          <li class="flow-step">Ingreso en Caja registrado</li>
+          <li class="flow-step">Descuento automático de Inventario</li>
+        </ul>
+      </div>
+
+      <!-- Flujo 2 -->
+      <div class="flow-card">
+        <h4>🔧 Servicio de Taller</h4>
+        <ul class="flow-steps">
+          <li class="flow-step">Crear orden de servicio técnico</li>
+          <li class="flow-step">Asignar mecánico responsable</li>
+          <li class="flow-step">Agregar repuestos utilizados</li>
+          <li class="flow-step">Cálculo de mano de obra</li>
+          <li class="flow-step">Descarga de piezas del stock</li>
+          <li class="flow-step">Cobro y liquidación en finanzas</li>
+        </ul>
+      </div>
+
+      <!-- Flujo 3 -->
+      <div class="flow-card">
+        <h4>📦 Compra de Repuestos</h4>
+        <ul class="flow-steps">
+          <li class="flow-step">Registrar proveedor</li>
+          <li class="flow-step">Ingresar factura de compra</li>
+          <li class="flow-step">Actualizar existencias en bodega</li>
+          <li class="flow-step">Actualizar costo de adquisición</li>
+          <li class="flow-step">Registro de egreso o cuenta por pagar</li>
+        </ul>
+      </div>
+
+      <!-- Flujo 4 -->
+      <div class="flow-card">
+        <h4>💰 Registro de Gastos</h4>
+        <ul class="flow-steps">
+          <li class="flow-step">Ingresar gasto administrativo u operativo</li>
+          <li class="flow-step">Clasificar categoría (arriendo, servicios)</li>
+          <li class="flow-step">Adjuntar soporte o nota</li>
+          <li class="flow-step">Impacto inmediato en saldo de caja</li>
+          <li class="flow-step">Reflejo en reporte de utilidad neta</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ STACK TECNOLÓGICO ══════════ -->
+<section class="section" id="tecnologia">
+  <div class="section-header">
+    <h2 class="section-title">Tecnología robusta, rápida y segura</h2>
+    <p class="section-subtitle">
+      Arquitectura web de alto rendimiento preparada para operar localmente o en la nube sin interrupciones.
+    </p>
+  </div>
+
+  <div class="tech-grid">
+    <div class="tech-card animate-up">
+      <div class="tech-icon">⚛️</div>
+      <h4>React.js & Vite</h4>
+      <p>Interfaz de usuario ultra rápida y fluida para facturación instantánea.</p>
+    </div>
+
+    <div class="tech-card animate-up delay-1">
+      <div class="tech-icon">🟢</div>
+      <h4>Node.js / Express</h4>
+      <p>Servidor backend seguro, ligero y con alta concurrencia de peticiones.</p>
+    </div>
+
+    <div class="tech-card animate-up delay-2">
+      <div class="tech-icon">🗄️</div>
+      <h4>PostgreSQL</h4>
+      <p>Base de datos relacional robusta con garantía de integridad transaccional.</p>
+    </div>
+
+    <div class="tech-card animate-up delay-3">
+      <div class="tech-icon">📱</div>
+      <h4>Escáner QR Nativo</h4>
+      <p>Lectura directa de códigos de barra y QR desde cámara o lector USB.</p>
+    </div>
+
+    <div class="tech-card animate-up delay-4">
+      <div class="tech-icon">🔒</div>
+      <h4>Roles & Seguridad</h4>
+      <p>Control de permisos para administradores, cajeros y mecánicos.</p>
+    </div>
+
+    <div class="tech-card animate-up delay-5">
+      <div class="tech-icon">☁️</div>
+      <h4>Cloud Backup</h4>
+      <p>Copias de seguridad programadas para proteger la información del negocio.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CRONOGRAMA DE ENTREGA ══════════ -->
+<section class="section" id="cronograma">
+  <div class="section-header">
+    <h2 class="section-title">Plan de entrega por fases</h2>
+    <p class="section-subtitle">
+      Desarrollo estructurado para que el equipo de Motos El Zarco pueda validar avances semana a semana.
+    </p>
+  </div>
+
+  <div class="timeline">
+    <div class="timeline-item animate-up">
+      <div class="timeline-dot">1</div>
+      <div class="timeline-content">
+        <h4>Fase 1 — Base de Datos, Configuración y POS de Ventas</h4>
+        <div class="timeline-duration">Semanas 1 - 2</div>
+        <p>
+          Configuración del entorno, base de datos PostgreSQL, usuarios y roles. Creación de la pantalla de Ventas POS (búsqueda de repuestos, cálculo de totales y registro de ventas).
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item animate-up delay-1">
+      <div class="timeline-dot">2</div>
+      <div class="timeline-content">
+        <h4>Fase 2 — Inventario, Códigos QR y Compras</h4>
+        <div class="timeline-duration">Semanas 3 - 4</div>
+        <p>
+          Administración de catálogo, categorías, marcas, precios de costo/venta, generador de códigos QR, alertas de bajo stock y registro de compras a proveedores.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item animate-up delay-2">
+      <div class="timeline-dot">3</div>
+      <div class="timeline-content">
+        <h4>Fase 3 — Taller Mecánico, Finanzas y Nómina</h4>
+        <div class="timeline-duration">Semanas 5 - 6</div>
+        <p>
+          Módulo de servicios del taller con asignación de mecánicos y repuestos. Control de caja diaria, ingresos, egresos, nómina de empleados y pagos.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline-item animate-up delay-3">
+      <div class="timeline-dot">4</div>
+      <div class="timeline-content">
+        <h4>Fase 4 — Dashboard, Reportes, Pruebas y Puesta en Marcha</h4>
+        <div class="timeline-duration">Semanas 7 - 8</div>
+        <p>
+          Pantalla de Dashboard con KPIs ejecutivos, reportes exportables, pruebas de rendimiento, capacitación del personal y salida oficial a producción.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ INVERSIÓN ══════════ -->
+<section class="section" id="inversion">
+  <div class="section-header">
+    <h2 class="section-title">Inversión en la Transformación Digital</h2>
+    <p class="section-subtitle">
+      Un sistema integral, sin mensualidades obligatorias por licencias de usuario.
+    </p>
+  </div>
+
+  <div class="pricing-card animate-up">
+    <div class="pricing-badge">Solución Integral Llave en Mano</div>
+    
+    <div class="pricing-header">
+      <h3>Desarrollo del Sistema Completo</h3>
+      <div class="pricing-val">$ 5.000.000 <span>COP</span></div>
+      <p>Pago fraccionado por hitos de entrega contra avance real del proyecto</p>
+    </div>
+
+    <div class="pricing-features">
+      <div class="pricing-item">
+        <span class="pricing-check">✓</span>
+        <span>Módulo POS de Ventas con Lector QR</span>
+      </div>
+      <div class="pricing-item">
+        <span class="pricing-check">✓</span>
+        <span>Módulo de Inventario y Alertas de Stock</span>
+      </div>
+      <div class="pricing-item">
+        <span class="pricing-check">✓</span>
+        <span>Módulo de Taller Mecánico y Servicios</span>
+      </div>
+      <div class="pricing-item">
+        <span class="pricing-check">✓</span>
+        <span>Módulo de Finanzas, Ingresos, Gastos y Caja</span>
+      </div>
+      <div class="pricing-item">
+        <span class="pricing-check">✓</span>
+        <span>Módulo de Personal y Registro de Nómina</span>
+      </div>
+      <div class="pricing-item">
+        <span class="pricing-check">✓</span>
+        <span>Dashboard Ejecutivo con Reportes Clave</span>
+      </div>
+      <div class="pricing-item">
+        <span class="pricing-check">✓</span>
+        <span>Identidad Visual Motos El Zarco & Hero</span>
+      </div>
+      <div class="pricing-item">
+        <span class="pricing-check">✓</span>
+        <span>Capacitación completa para el equipo</span>
+      </div>
+      <div class="pricing-item">
+        <span class="pricing-check">✓</span>
+        <span>3 meses de soporte técnico y garantía</span>
+      </div>
+      <div class="pricing-item">
+        <span class="pricing-check">✓</span>
+        <span>Entrega total del código fuente</span>
+      </div>
+    </div>
+
+    <div class="pricing-note">
+      💡 <strong>Forma de pago recomendada:</strong> 40% al inicio ($2.000.000), 30% al completar las Fases 1 y 2 (Ventas + Inventario - $1.500.000), y 30% a la entrega final y puesta en marcha ($1.500.000).
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ BENEFICIOS DIRECTOS ══════════ -->
+<section class="section" id="beneficios">
+  <div class="section-header">
+    <h2 class="section-title">Beneficios para Motos El Zarco</h2>
+    <p class="section-subtitle">
+      Retorno de inversión medible desde el primer día de operación.
+    </p>
+  </div>
+
+  <div class="benefits-grid">
+    <div class="benefit-card animate-up">
+      <div class="benefit-icon">🛡️</div>
+      <h4>Cero Fugas de Inventario</h4>
+      <p>Cada tornillo, pastilla de freno y cuarto de aceite queda registrado con su entrada, salida y responsable.</p>
+    </div>
+
+    <div class="benefit-card animate-up delay-1">
+      <div class="benefit-icon">⏱️</div>
+      <h4>Facturación y Cobro Ágil</h4>
+      <p>Atención inmediata a los clientes en mostrador con búsqueda rápida por código o QR sin demoras.</p>
+    </div>
+
+    <div class="benefit-card animate-up delay-2">
+      <div class="benefit-icon">🔧</div>
+      <h4>Taller Ordenado y Rentable</h4>
+      <p>Sabrá con precisión cuánto produce cada mecánico y qué repuestos se consumen en cada moto reparada.</p>
+    </div>
+
+    <div class="benefit-card animate-up delay-3">
+      <div class="benefit-icon">📊</div>
+      <h4>Caja y Finanzas al Día</h4>
+      <p>Arqueos de caja exactos sin descuadres entre efectivo, transferencias Nequi/Bancolombia y tarjetas.</p>
+    </div>
+
+    <div class="benefit-card animate-up delay-4">
+      <div class="benefit-icon">📈</div>
+      <h4>Decisiones Basadas en Datos</h4>
+      <p>Conozca qué repuestos tienen mayor rotación para comprar con descuento por volumen a distribuidores Hero.</p>
+    </div>
+
+    <div class="benefit-card animate-up delay-5">
+      <div class="benefit-icon">🚀</div>
+      <h4>Preparado para Crecer</h4>
+      <p>Diseño modular preparado para futuras fases: facturación electrónica, WhatsApp automático y agenda de citas.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CTA FINAL ══════════ -->
+<section class="cta-section">
+  <h2 class="animate-up">
+    ¿Listos para llevar a Motos El Zarco<br>al siguiente nivel?
+  </h2>
+  <p class="animate-up delay-1">
+    Estamos listos para iniciar el desarrollo y transformar la administración de su negocio.
+  </p>
+  <a href="https://wa.me/573000000000?text=Hola,%20revisamos%20la%20propuesta%20de%20software%20para%20Motos%20El%20Zarco" class="btn-whatsapp animate-up delay-2" target="_blank">
+    <span>💬</span> Conversar por WhatsApp
+  </a>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<div class="color-bar"></div>
+<footer class="footer">
+  <p>
+    © 2026 — Propuesta de Software Confidencial desarrollada para <strong>Motos El Zarco</strong>. <br>
+    Identidad visual y respaldo con estilo <strong>Hero Repuestos</strong>.
+  </p>
+</footer>
+
+<!-- ══════════ INTERACTION SCRIPT ══════════ -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  // Intersection Observer for scroll animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.animationPlayState = 'running';
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.animate-up').forEach(el => {
+    if (!el.closest('.hero')) {
+      el.style.animationPlayState = 'paused';
+      observer.observe(el);
+    }
+  });
+
+  // Nav shadow on scroll
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 40) {
+      nav.style.background = 'rgba(11, 12, 14, 0.98)';
+      nav.style.boxShadow = '0 8px 30px rgba(0, 0, 0, 0.6)';
+    } else {
+      nav.style.background = 'rgba(18, 20, 24, 0.95)';
+      nav.style.boxShadow = 'none';
+    }
+  });
+
+  // Smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      const targetId = a.getAttribute('href');
+      if (targetId.length > 1) {
+        e.preventDefault();
+        const target = document.querySelector(targetId);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      }
+    });
+  });
+});
+</script>
+
+</body>
+</html>

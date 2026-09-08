@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Finanzas - Motos El Zarco / Hero Repuestos</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background-color: #0b0c10;
+    color: #e2e8f0;
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  .top-toolbar {
+    background: #111215;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+  .brand-badge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .brand-dot {
+    width: 10px;
+    height: 10px;
+    background: #22c55e;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #22c55e;
+  }
+  .brand-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 0.02em;
+  }
+  .brand-sub {
+    font-size: 12px;
+    background: rgba(217, 18, 30, 0.15);
+    border: 1px solid rgba(217, 18, 30, 0.4);
+    color: #ff6b75;
+    padding: 3px 8px;
+    border-radius: 6px;
+    font-weight: 600;
+  }
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .btn-action {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .btn-action:hover {
+    background: #D9121E;
+    border-color: #D9121E;
+  }
+  .main-stage {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px;
+    background: radial-gradient(circle at 50% 0%, #1a1c23 0%, #0d0e12 100%);
+  }
+  .screen-card {
+    max-width: 1560px;
+    width: 100%;
+    background: #000;
+    border-radius: 12px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255,255,255,0.1);
+    overflow: hidden;
+  }
+  .screen-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+</style>
+</head>
+<body>
+  <div class="top-toolbar">
+    <div class="brand-badge">
+      <span class="brand-dot"></span>
+      <span class="brand-title">Módulo Financiero y Flujo de Caja</span>
+      <span class="brand-sub">Hero Motos El Zarco</span>
+    </div>
+    <div class="actions">
+      <a href="finanzas.png" target="_blank" class="btn-action">
+        <span>🔍 Ver resolución original</span>
+      </a>
+      <a href="../index.html" class="btn-action" style="background:#D9121E; border-color:#D9121E;">
+        <span>← Volver a la Propuesta</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="main-stage">
+    <div class="screen-card">
+      <img src="finanzas.png" alt="Interfaz de Ventas POS - Motos El Zarco" class="screen-img"/>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "propuesta-motos-el-zarco",
+  "version": "1.0.0",
+  "description": "Propuesta Comercial y Técnica - Sistema Integral de Gestión Motos El Zarco",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
