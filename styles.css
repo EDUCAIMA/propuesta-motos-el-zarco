@@ -459,76 +459,96 @@ body {
   border-radius: 6px; margin-top: 0.5rem;
 }
 .pricing-val-original {
-  font-size: 1.15rem; font-weight: 700; color: #94A3B8; text-decoration: line-through;
-  display: block; margin-top: 0.4rem;
-}
-.pricing-discount-pill {
-  display: inline-flex; align-items: center; gap: 0.35rem;
-  background: #FEF2F2; color: #DC2626; border: 1px solid #FCA5A5;
-  font-size: 0.76rem; font-weight: 800; text-transform: uppercase;
-  letter-spacing: 0.5px; padding: 0.25rem 0.75rem; border-radius: 50px;
-  margin-top: 0.35rem;
-}
-.discount-floating-card {
-  background: linear-gradient(135deg, #111215 0%, #1c1e24 100%);
-  border: 1px solid rgba(220, 38, 38, 0.4);
-  border-radius: 16px;
-  padding: 1.2rem 1.4rem;
-  margin: 1.2rem 0 1.6rem;
-  box-shadow: 0 12px 28px -6px rgba(220, 38, 38, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.06);
+  font-size: 1.35rem; font-weight: 800; color: #94A3B8;
   position: relative;
-  overflow: hidden;
-  text-align: left;
+  display: inline-block;
+  margin-top: 0.5rem;
 }
-.discount-floating-card::before {
+.pricing-val-original::after {
   content: "";
   position: absolute;
-  top: -30px;
-  right: -30px;
-  width: 90px;
-  height: 90px;
-  background: radial-gradient(circle, rgba(217, 18, 30, 0.35) 0%, transparent 70%);
-  pointer-events: none;
+  left: -4%;
+  top: 50%;
+  width: 108%;
+  height: 3px;
+  background: #EF4444;
+  transform: rotate(-4deg);
+  border-radius: 2px;
+  box-shadow: 0 0 8px rgba(239, 68, 68, 0.6);
 }
-.discount-badge-top {
+
+/* Tarjeta Flotante Brillante y Llamativa */
+.discount-shiny-card {
+  position: relative;
+  background: linear-gradient(135deg, #0F1015 0%, #1E0A0D 50%, #151821 100%);
+  border: 1.5px solid #EF4444;
+  border-radius: 16px;
+  padding: 1rem 1.25rem;
+  margin: 1.2rem 0 1.5rem;
+  box-shadow: 0 10px 30px rgba(239, 68, 68, 0.25), 0 0 25px rgba(239, 68, 68, 0.2), inset 0 1px 1px rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+  text-align: left;
+  animation: shinyPulse 3.5s infinite ease-in-out;
+}
+@keyframes shinyPulse {
+  0%, 100% {
+    box-shadow: 0 10px 30px rgba(239, 68, 68, 0.25), 0 0 20px rgba(239, 68, 68, 0.2);
+    border-color: #EF4444;
+  }
+  50% {
+    box-shadow: 0 14px 40px rgba(239, 68, 68, 0.45), 0 0 35px rgba(239, 68, 68, 0.4);
+    border-color: #F87171;
+  }
+}
+.discount-shiny-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+  transform: skewX(-25deg);
+  animation: lightSweep 4s infinite cubic-bezier(0.4, 0, 0.2, 1);
+}
+@keyframes lightSweep {
+  0% { left: -120%; }
+  35%, 100% { left: 220%; }
+}
+.discount-shiny-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 0.6rem;
+  gap: 0.5rem;
+  margin-bottom: 0.45rem;
 }
-.discount-chip {
-  background: var(--hero-red);
+.discount-glow-badge {
+  background: linear-gradient(135deg, #DC2626 0%, #B91C1C 100%);
   color: white;
-  font-size: 0.76rem;
-  font-weight: 800;
-  letter-spacing: 0.6px;
+  font-size: 0.85rem;
+  font-weight: 900;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
-  padding: 0.25rem 0.65rem;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(217, 18, 30, 0.4);
-}
-.discount-saved {
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: #F87171;
-}
-.discount-card-body h5 {
-  color: #FFFFFF;
-  font-size: 0.95rem;
-  font-weight: 800;
-  margin-bottom: 0.3rem;
-  display: flex;
+  padding: 0.35rem 0.85rem;
+  border-radius: 8px;
+  display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.35rem;
+  box-shadow: 0 0 16px rgba(220, 38, 38, 0.7);
 }
-.discount-card-body p {
-  color: #94A3B8;
-  font-size: 0.8rem;
-  line-height: 1.45;
+.discount-amount-saved {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: #FCA5A5;
+}
+.discount-shiny-caption {
+  font-size: 0.82rem;
+  color: #E2E8F0;
   margin: 0;
+  line-height: 1.4;
 }
-.discount-card-body strong {
-  color: #F1F5F9;
+.discount-shiny-caption strong {
+  color: #FFFFFF;
 }
 .pricing-features {
   display: flex;
