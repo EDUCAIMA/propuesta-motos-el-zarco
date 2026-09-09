@@ -458,6 +458,37 @@ body {
   background: #ECFDF5; display: inline-block; padding: 0.25rem 0.75rem;
   border-radius: 6px; margin-top: 0.5rem;
 }
+.pricing-val-original {
+  font-size: 1.15rem; font-weight: 700; color: #94A3B8; text-decoration: line-through;
+  display: block; margin-top: 0.4rem;
+}
+.pricing-discount-pill {
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  background: #FEF2F2; color: #DC2626; border: 1px solid #FCA5A5;
+  font-size: 0.76rem; font-weight: 800; text-transform: uppercase;
+  letter-spacing: 0.5px; padding: 0.25rem 0.75rem; border-radius: 50px;
+  margin-top: 0.35rem;
+}
+.reactivation-banner {
+  background: linear-gradient(135deg, #FFF1F2 0%, #FFE4E6 100%);
+  border: 1px dashed #FB7185;
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+  margin: 1.2rem 0 1.6rem;
+  text-align: left;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+.reactivation-banner-icon {
+  font-size: 1.25rem; flex-shrink: 0; line-height: 1;
+}
+.reactivation-banner-text h5 {
+  font-size: 0.84rem; font-weight: 800; color: #9F1239; margin-bottom: 0.2rem;
+}
+.reactivation-banner-text p {
+  font-size: 0.78rem; color: #881337; line-height: 1.4; margin: 0;
+}
 .pricing-features {
   display: flex;
   flex-direction: column;
