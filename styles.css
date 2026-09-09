@@ -469,25 +469,66 @@ body {
   letter-spacing: 0.5px; padding: 0.25rem 0.75rem; border-radius: 50px;
   margin-top: 0.35rem;
 }
-.reactivation-banner {
-  background: linear-gradient(135deg, #FFF1F2 0%, #FFE4E6 100%);
-  border: 1px dashed #FB7185;
-  border-radius: 12px;
-  padding: 0.85rem 1rem;
+.discount-floating-card {
+  background: linear-gradient(135deg, #111215 0%, #1c1e24 100%);
+  border: 1px solid rgba(220, 38, 38, 0.4);
+  border-radius: 16px;
+  padding: 1.2rem 1.4rem;
   margin: 1.2rem 0 1.6rem;
+  box-shadow: 0 12px 28px -6px rgba(220, 38, 38, 0.25), 0 0 0 1px rgba(255, 255, 255, 0.06);
+  position: relative;
+  overflow: hidden;
   text-align: left;
+}
+.discount-floating-card::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 90px;
+  height: 90px;
+  background: radial-gradient(circle, rgba(217, 18, 30, 0.35) 0%, transparent 70%);
+  pointer-events: none;
+}
+.discount-badge-top {
   display: flex;
-  align-items: flex-start;
-  gap: 0.75rem;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
 }
-.reactivation-banner-icon {
-  font-size: 1.25rem; flex-shrink: 0; line-height: 1;
+.discount-chip {
+  background: var(--hero-red);
+  color: white;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  padding: 0.25rem 0.65rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(217, 18, 30, 0.4);
 }
-.reactivation-banner-text h5 {
-  font-size: 0.84rem; font-weight: 800; color: #9F1239; margin-bottom: 0.2rem;
+.discount-saved {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #F87171;
 }
-.reactivation-banner-text p {
-  font-size: 0.78rem; color: #881337; line-height: 1.4; margin: 0;
+.discount-card-body h5 {
+  color: #FFFFFF;
+  font-size: 0.95rem;
+  font-weight: 800;
+  margin-bottom: 0.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.discount-card-body p {
+  color: #94A3B8;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  margin: 0;
+}
+.discount-card-body strong {
+  color: #F1F5F9;
 }
 .pricing-features {
   display: flex;
